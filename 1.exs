@@ -71,3 +71,14 @@ defmodule Example.User do
 end
 
 %Example.User()
+
+
+for x <- [1,2,3],do: x * x
+for x <- [1,2,3] do x * x end
+
+import Integer
+for x <- 1..10, is_even(x), do: x
+
+
+for {k, v} <- [one: 1, two: 2, three: 3], into: %{}, do: {k, v}
+for c <- [72, 101, 108, 108, 111], into: "", do: <<c>>
