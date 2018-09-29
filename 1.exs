@@ -82,3 +82,5 @@ for x <- 1..10, is_even(x), do: x
 
 for {k, v} <- [one: 1, two: 2, three: 3], into: %{}, do: {k, v}
 for c <- [72, 101, 108, 108, 111], into: "", do: <<c>>
+
+IO.puts("aaaa")
